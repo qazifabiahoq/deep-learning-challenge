@@ -4,6 +4,18 @@
 
 The project involved creating a deep learning model using TensorFlow and Keras to predict the success of funding applicants for Alphabet Soup based on various input features. The goal was to achieve an accuracy higher than 75%.
 
+## File Structure
+
+AlphabetSoupCharity.ipynb
+
+AlphabetSoupCharity.h5
+
+AlphabetSoupCharity_Optimization.ipynb
+
+AlphabetSoupCharity_Optimization.h5
+
+All files are located in the main directory. The detailed report is written at the very bottom of AlphabetSoupCharity_Optimization.ipynb.
+
 ## Approach
 
 Data Preprocessing:
