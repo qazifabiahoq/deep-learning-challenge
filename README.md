@@ -1,73 +1,71 @@
 # Alphabet Soup Deep Learning Model Performance Report
 
+---
+
 ## Project Description
 
-The project involved creating a deep learning model using TensorFlow and Keras to predict the success of funding applicants for Alphabet Soup based on various input features. The goal was to achieve an accuracy higher than 75%.
+This project focuses on developing a deep learning model to predict the success of funding applicants for Alphabet Soup. The objective was to build a model that achieves an accuracy greater than 75% by analyzing various applicant features.
 
-## File Structure
+---
 
-AlphabetSoupCharity.ipynb
+## Who Will Benefit and Why
 
-AlphabetSoupCharity.h5
+Organizations like Alphabet Soup, which allocate funding based on applicant evaluations, will benefit from this project. Automating and improving prediction accuracy can help streamline decision-making, reduce manual review efforts, and allocate resources more effectively.
 
-AlphabetSoupCharity_Optimization.ipynb
+---
 
-AlphabetSoupCharity_Optimization.h5
+## Dataset
 
-All files are located in the main directory. The detailed report is written at the very bottom of AlphabetSoupCharity_Optimization.ipynb.
+The dataset includes applicant information with a target variable indicating funding success (`IS_SUCCESSFUL`). It contains multiple features related to the applicants, while irrelevant columns such as `EIN` and `NAME` were removed during preprocessing.
 
-## Approach
+---
 
-Data Preprocessing:
+## How It Was Done
 
-Identified the target variable (IS_SUCCESSFUL) and features.
+* **Data Preprocessing:**
+  Identified target and features, removed unnecessary columns, encoded categorical data, split into training and test sets, and scaled features using StandardScaler.
 
-Dropped irrelevant columns (EIN and NAME).
+* **Model Development:**
+  Built several neural networks using TensorFlow and Keras, varying the number of hidden layers and neurons. ReLU activation was used for hidden layers and sigmoid for the output layer. Models were trained and evaluated on accuracy.
 
-Encoded categorical variables and split the data into training and testing sets.
+* **Optimization Attempts:**
+  Tried different binning strategies for rare data occurrences, tested multiple network architectures, and increased training epochs to improve performance.
 
-Scaled the data using StandardScaler.
+---
 
-## Model Design and Training:
+## Key Findings
 
-Built neural network models with varying complexities, adjusting the number of hidden layers and neurons.
+1. **How accurate were the models?**
+   The first model achieved 72.7% accuracy, and the second model scored 72.4%, both slightly below the 75% target.
 
-Used ReLU activation for hidden layers and sigmoid activation for the output layer.
+2. **Did increasing model complexity improve results?**
+   Adding hidden layers and neurons provided some insights but did not significantly boost accuracy beyond the initial scores.
 
-Trained the models and evaluated their performance using accuracy metrics.
+3. **What optimizations were explored?**
+   Adjusting binning, varying architectures, activation functions, and increasing epochs were tested but showed limited impact on surpassing the accuracy goal.
 
-## Optimization Attempts:
+4. **What skills were demonstrated?**
+   The project showcased effective use of TensorFlow and Keras for deep learning model design, training, and evaluation.
 
-Adjusted binning for rare occurrences.
+---
 
-Explored different neural network architectures.
+## Conclusion
 
-Increased the number of epochs for training.
+The deep learning models developed provided valuable predictive insights into funding success for Alphabet Soup, achieving up to 72.7% accuracy. While the 75% accuracy target was not met, the approach demonstrated solid application of neural network techniques and data preprocessing best practices.
 
-## Results
-
-Model Performance:
-
-First model accuracy: 72.7%.
-Second model accuracy: 72.4%.
-
-Achievements:
-Developed two models that provided valuable insights despite not meeting the 75% target.
-
-Explored various optimizations, including adjusting binning, adding hidden layers and neurons, using different activation functions, and increasing epochs.
-
-Demonstrated proficiency in TensorFlow and Keras for deep learning model development.
+---
 
 ## Recommendations
 
-Continue fine-tuning hyperparameters and exploring more complex neural network architectures.
-Apply regularization techniques to improve model performance.
+Further improvements could come from fine-tuning hyperparameters, experimenting with more complex architectures, and applying regularization techniques to reduce overfitting and enhance model generalization.
 
-## Summary
+---
 
-The project aimed to develop a deep learning model to predict funding applicants' success for Alphabet Soup, achieving accuracies of 72.7% and 72.4% for the two models. Despite not meeting the 75% target, the models provided valuable insights and demonstrated proficiency in TensorFlow and Keras. Future efforts should focus on further optimizing hyperparameters and exploring more complex neural network architectures.
+# File Structure
 
+* `AlphabetSoupCharity.ipynb`
+* `AlphabetSoupCharity.h5`
+* `AlphabetSoupCharity_Optimization.ipynb`
+* `AlphabetSoupCharity_Optimization.h5`
 
-
-
-
+All files are located in the main project directory. The detailed report is available at the bottom of `AlphabetSoupCharity_Optimization.ipynb`.
